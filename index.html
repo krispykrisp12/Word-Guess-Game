@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman</title>
+
+    <!-- title icon -->
+    <link rel="shortcut icon" type="img/jpeg" href="assets/images/ww2.png">
+
+    <!-- BootStrap Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- My CSS link -->
+    <link rel="stylesheet" href="assets/CSS/style.css" type="text/css">
+
+    
+
+    
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid  big-screen">
+        <div class="container">
+            <h1 id="jumbo-picture"><strong>Game of Thrones</strong></h1>
+            <h3 class=""><strong>Hangman</strong></h3>
+            <p class="lead" id="empty-words"></p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 left" id="hide">
+                <h2>Instructions:</h2>
+                
+                <ol>
+                    <li>Pick a letter</li>
+                    <li>If you guess correct: you're good</li>
+                    <li>Guess again</li>
+                    <li>If you guess wrong: you lose a guess</li>
+                    <li>If you run out of guesses you lose</li>
+                    <li>Guess again</li>
+                    <li>Must guess all the correct letters withou hitting zero</li>
+                    <li>Good luck!</li>
+                </ol>
+                <br>
+                <button id="hidden">Hide</button>
+            </div>
+            <!-- second left -->
+        <div class="col-md-6 left" id="score">
+            <h2>Don't be a Ned Stark</h2>
+                <div id="hidden-left">
+                    <div>
+                        <!-- Keeps track of guess the user has left -->
+                        Guesses Left: <span id="guesses-left">9</span>
+                    </div>
+                    <br>
+                    <div>
+                        <!-- Keeps track of the users wins -->
+                        Wins: <span id="win-counter">0</span>
+                    </div>
+                    <br>
+                    <div>
+                        <!-- Keeps track of the user losses -->
+                        Losses: <span id="loss-counter">0</span>
+                    </div> 
+                    <br>
+                    <div>
+                        <!-- Keeps track of wrong guesses of the user -->                
+                        Wrong Guesses: <span id="wrong-guesses"></span>
+                    </div>  
+                </div>
+            <button id="unhide" class="">Instructions</button>
+        </div>
+            <div class="col-md-6 right">
+                <h2>Alphabet:</h2>
+                <div id="buttons"></div>
+                <br>
+                <!-- <button id="play">Play Again</button> -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div>&copy; copyright Kris</div>
+    </footer>
+     <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- Javascript file -->
+    <script type="text/javascript" src="assets/JS/game.js"></script>
+</body>
+</html>

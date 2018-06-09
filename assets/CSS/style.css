@@ -1,0 +1,129 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+body {
+    background: #20343f;
+}
+
+/* =============Jumbotron============= */
+
+.big-screen {
+    /* background-color: #000; */
+    text-align: center;
+    color: white;
+    background-image: url("../Images/faces2.jpg");
+    margin: 0px;
+    color: #89a8af;
+}
+
+.big-screen h1 {
+    position: absolute;
+    top: 5px;
+    left: 400px;
+    font-size: 60px;
+    letter-spacing: 3px;
+    /* color: #20343f; */
+}
+
+.big-screen h3 {
+    /* position: absolute;
+    top: 5px;
+    left: 400px; */
+    font-size: 30px;
+    letter-spacing: 3px;
+    /* color: #20343f; */
+}
+.big-screen p {
+    font-size: 30px;
+    /* padding:  */
+    letter-spacing: 3px;
+    color: #89a8af;
+    background-color: #20343f;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+    opacity: 0.9;
+    margin: 20px;
+
+}
+/* =============Content============= */
+
+.conatiner {
+    background: #000;
+    
+}
+.row {
+    text-align: center;
+    color: white;
+}
+
+.left {
+    background: #463a3a;
+    height: auto;
+    opacity: 0.5;
+    border: solid 1px black;
+}
+
+#hidden-left {
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    font-size: 20px;
+    
+}
+
+
+
+li {
+    text-align: left;
+    margin: 2px;
+}
+
+.right {
+    background: #89a8af;
+    height: auto;
+    opacity: 0.5;
+    border: solid 1px black;
+    background-image: url("../Images/Texture_02.jpg");    
+}
+
+
+.right button {
+    text-align: center;
+    margin-top: 15px;
+}
+/* ============More Stuff============== */
+.letter {
+    width: 50px;
+    height: 50px;
+    border-style: solid 1 #fff;;
+    padding: 2px;
+    float: left;
+    margin: 10px;
+  }
+
+  .button-color {
+    color: #dfda8c;
+    background:#66382c;
+  }
+
+  .game-letter {
+      margin: 0px 10px;
+  }
+
+  .red {
+      color: red;
+  }
+/* ============Footer============== */
+#footer {
+    /* position: fixed;
+    bottom: 0px; */
+    width: 100%;
+    background: #2d2d2d;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
