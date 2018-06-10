@@ -40,7 +40,8 @@ $(document).ready(function() {
     var lossCounter = 0;
     var defaultNumGuesses = 9;
     
-    
+    // Music variable
+    var main = " ";
 
     // ========================================================== Functions ======================================================================
   leftSide();
@@ -85,21 +86,15 @@ function startOfGame(gameArray){
 
     $("#empty-words").append(tag);
   }
+    // reset wrong guesses
+    wrongGuesses = [];
 
-  wrongGuesses = [];
-
-  
+    //removing the red class
     $("#guesses-left").removeClass("red");
   
-
-
 }
 
 startOfGame(characters);  
-
-
-
-
 
 
     // ============================== Loop =========================================
@@ -119,6 +114,8 @@ startOfGame(characters);
         console.log(letterButton);
 
     }
+
+   
     // ========================================================================
 
     $("button.letter").on("click", function(){
@@ -134,11 +131,12 @@ startOfGame(characters);
         }
         
       }
-
+      // Calling the checkLetter function
       checkLetter(letter);
+ 
       $("#guesses-left").text(defaultNumGuesses - wrongGuesses.length);
-
     });
+// -----------------
 
 
 function checkLetter(letter){
